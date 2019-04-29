@@ -5,6 +5,7 @@ body {
   background-position: top left;
   margin: 0;
 }
+
 #app {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
@@ -15,20 +16,24 @@ body {
   margin: 10px auto;
   padding: 10px;
   font-family: "Open-sans", sans-serif;
-  li {
-    min-height: 400px;
-    padding: 5px 5px 5px;
-  }
-  h2 {
-    color: #f79421;
-    font-weight: 800;
-    text-shadow: 3px 3px 6px black;
-    margin-top: 5px;
-  }
-  img {
-    float: right;
-    max-width: 35vw;
-    max-height: 350px;
-    margin: 5px;
-  }
 }
+
+#app li {
+  min-height: 400px;
+  padding: 5px 5px 5px;
+}
+
+#app h2 {
+  color: #f79421;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px black;
+  margin-top: 5px;
+}
+
+#app img {
+  float: right;
+  max-width: 35vw;
+  max-height: 350px;
+  margin: 5px;
+}
+/*# sourceMappingURL=style.prefixed.css.map */

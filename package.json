@@ -1,11 +1,10 @@
 {
   "name": "14.1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kodilla task 14.2 React - Info on movies",
   "main": "index.html",
   "scripts": {
-    "test": "npm run test:html && npm run test:js",
-    "test:html": "globstar nu-html-checker templates/*.html",
+    "test": "npm run test:js",
     "test:js": "jshint",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
@@ -19,7 +18,7 @@
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
     "watch:sassprefixer": "onchange -d 100 sass/style.scss -- npm-run-all -p sassprefixer:*",
-    "watch:browsersync": "browser-sync start --server --files css/*.css templates/*.html",
+    "watch:browsersync": "browser-sync start --server --files css/*.css *.html",
     "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "sassprefixer:autoprefixer": "autoprefixer-cli -o css/style.prefixed.css css/style.css"
   },
@@ -41,12 +40,10 @@
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
-    "globstar": "^1.0.0",
     "html-validator-cli": "^5.0.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
-    "nu-html-checker": "^0.1.0",
     "onchange": "^5.2.0",
     "rimraf": "^2.6.3",
     "sass-graph": "^3.0.4",
